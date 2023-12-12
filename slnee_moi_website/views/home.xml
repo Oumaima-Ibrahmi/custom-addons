@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="my_homepage" name="SLNEE - Home Page">
+        <t t-call="website.layout">
+            <div class="main-div">
+                <div class="background_image"/>
+                <div class="main-logo">
+                    <img src="/slnee_moi_website/static/src/img/main_logo.png" alt="Logo"/>
+                </div>
+                <div class="content">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Service Desk</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ERP System</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Communication</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hall Reservation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Task Management</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <input type="text" class="search"/>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide d-flex card-home">
+                                <img class="col-6" src="/slnee_moi_website/static/src/img/card-img.png"/>
+                                <div class="d-block text-white">
+                                    <div class="d-flex">
+                                        <span>Title</span>
+                                        <span>More</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis
+                                        dolore te feugait nulla facilisi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="layout_inherit" name="Layout - Inherit" inherit_id="website.layout">
+        <xpath expr="//header" position="replace"></xpath>
+        <xpath expr="//footer" position="replace">
+            <footer t-if="not no_footer" id="bottom" data-anchor="true" class="">
+                <div class="o_footer_copyright">
+                    <div class="container py-3">
+                        <div class="row">
+                            <div class="col-sm text-center text-white">
+                                <span>All rights reserved to the Ministry of Interior Development Program © 2023- Saudi
+                                    Arabia
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+
+    <template id="page_login" name="SLNEE - Login Page" inherit_id="website.login_layout">
+        <xpath expr="t" position="replace">
+            <t t-call="website.layout">
+                <div class="main-div">
+                    <div class="background_image"/>
+                    <div class="inline-logo">
+                        <img src="/slnee_moi_website/static/src/img/inline_logo.png" alt="Logo"/>
+                    </div>
+                    <div class="content bg-custom-white" style="height: 64vh;">
+                        <div class="container">
+                            <nav class="navbar navbar-expand-md">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        <a t-attf-class="nav-link text-dark-green"
+                                           href="/my-home">Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a t-attf-class="nav-link text-dark-green"
+                                           href="/my-home/service/login">Service Desk
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a t-attf-class="nav-link text-dark-green active"
+                                           href="/my-home/erp/login">ERP System
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a t-attf-class="nav-link text-dark-green"
+                                           href="/my-home/communication/login">Communication
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a t-attf-class="nav-link text-dark-green"
+                                           href="/my-home/reservation/login">Hall Reservation
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a t-attf-class="nav-link text-dark-green"
+                                           href="/my-home/management/login">Task Management
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="page-title">
+                                <div class="row d-flex">
+                                    <span>
+                                        <i class="fas fa-house-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="oe_website_login_container" t-raw="0"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="dashboard_options" name="SLNEE - Dashboard Options">
+        <t t-if="leaves">
+            <div class="card bg-c-lite-green option">
+                <div class="card-block">
+                    <div class="row align-items-end">
+                        <div class="col-12">
+                            <h4 class="text-white"><t t-esc="len(leaves.ids)"/> طلب</h4>
+                            <h6 class="text-white m-b-0">إجازات</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.125)">
+                    <p class="text-white m-b-0"><i class="feather icon-clock text-white f-14 m-l-10"></i>آخر تحديث
+                         : 10 ديسمبر 2023</p>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="my_dashboard" name="SLNEE - My Dashboard">
+        <t t-call="website.layout">
+
+            <div class="background_image"/>
+            <div class="my-dashboard-menu-bar">
+                <div class="inline-logo my-dashboard">
+                    <img src="/slnee_moi_website/static/src/img/inline_logo.png" alt="Logo"/>
+                </div>
+                <div>
+                    <ul class="custom_header">
+                        <li>
+                            <a href="#">▾اللغة</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#">العربية</a>
+                                </li>
+                                <li>
+                                    <a href="#">English</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">▾اسم الموظف</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#">البيانات</a>
+                                </li>
+                                <li>
+                                    <a href="#">تسجيل الخروج</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-img">
+                    <img src="/slnee_moi_website/static/src/img/avatar.png" alt="profile avatar"/>
+                </div>
+            </div>
+
+            <div class="custom-sidebar">
+                <div class="menu">
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                 viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+                            </svg>
+                        </div>
+                        <div class="label">الرئيسية</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                 viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+                            </svg>
+                        </div>
+                        <div class="label">الملف الالكتروني</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                 viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM128 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32-128a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm96-248c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224z"/>
+                            </svg>
+                        </div>
+                        <div class="label">الاجازات</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                 viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384v38.6C310.1 219.5 256 287.4 256 368c0 59.1 29.1 111.3 73.7 143.3c-3.2 .5-6.4 .7-9.7 .7H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zm48 96a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm16 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v48H368c-8.8 0-16 7.2-16 16s7.2 16 16 16h48v48c0 8.8 7.2 16 16 16s16-7.2 16-16V384h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H448V304z"/>
+                            </svg>
+                        </div>
+                        <div class="label">تعريف بالراتب</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/>
+                            </svg>
+                        </div>
+                        <div class="label">الانتداب</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                            </svg>
+                        </div>
+                        <div class="label">المستحقات المالية</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/>
+                            </svg>
+                        </div>
+                        <div class="label">العهد</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                 viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM80 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm54.2 253.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.7 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 349l-9.8 32.8z"/>
+                            </svg>
+                        </div>
+                        <div class="label">العمل الاضافي</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M448 480H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64zM184 272c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"/>
+                            </svg>
+                        </div>
+                        <div class="label">دورات التدريب</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                            </svg>
+                        </div>
+                        <div class="label">خدمة الاستئذان</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                 viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                        d="M137.4 502.6c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V288H544c17.7 0 32-14.3 32-32s-14.3-32-32-32H448V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L384 109.3V224H192 128 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96zM128 192h64V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V192zM448 320H384V448c0 17.7 14.3 32 32 32s32-14.3 32-32V320z"/>
+                            </svg>
+                        </div>
+                        <div class="label">الحضور والانصراف</div>
+                    </a>
+                </div>
+            </div>
+<!-- DASHBOARD -->
+            <div class="data_container d-block">
+                <div class="row d-flex dashboard-options">
+
+
+                           <!--            Beggining  of cards             -->
+
+                    <div id="root rt"  dir="rtl">
+             <div class="container pt-5">
+                     <div class="row align-items-stretch len">
+                         <div class="c-dashboardInfo col-lg-3 col-md-6 ">
+                             <div class="wrap el1 ">
+                              <div class="admin-img"> <img src="/slnee_moi_website/static/src/img/admin.png" width="160" height="120" alt="admin-img"/></div>
+                                 <h4 class="admin-title">Administrator</h4>
+                                   <div class="admin-info">
+                                     <span>10000</span>
+                                     <span>المستشارين</span>
+                                     <span>الهيئة العامة للنقل</span>
+                                   </div>
+                              </div>
+                          </div>
+                            <div class="c-dashboardInfo col-lg-3 col-md-6 ">
+                              <div class="wrap el2">
+                                  <h4 class="card-title c-dashboardInfo__title">الحضور اليومي:
+                                    <i class="fa fa-wpforms" aria-hidden="true"></i>
+                                  </h4>
+                                    <span class="txt-el2"> لم يتم تسجيل الحضور</span>
+
+                                    <span class="hind-font caption-12 c-dashboardInfo__subInfo"></span>
+                              </div>
+                            </div>
+
+
+                           <div class="c-dashboardInfo col-lg-6 col-md-6 ">
+                             <div class="wrap el3">
+                                  <h4 class="card-title c-dashboardInfo__title">الحضور الاسبوعي:
+                                     <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                  </h4>
+                                     <span class="txt-bg">ساعات العمل الحالية</span>
+                                     <span class="hind-font caption-12 c-dashboardInfo__subInfo"> *ساعات العمل المطلوبة=40</span>
+                              </div>
+                           </div>
+                           </div>
+                           </div>
+
+                        <div class="container pt-5 second-container">
+                           <div class="row align-items-stretch">
+                           <div class="c-dashboardInfo col-lg-3 col-md-6 ">
+                            <div class="wrap el4">
+                                <h4 class="card-title c-dashboardInfo__title">الاجازات
+                                    <i class="fa fa-wpforms" aria-hidden="true"></i> </h4>
+                                     <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
+                                     <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
+                              </div>
+                             </div>
+                               <div class="c-dashboardInfo col-lg-3 col-md-6 ">
+                            <div class="wrap el5">
+            <h4 class="card-title c-dashboardInfo__title">الإنتدابات<i class="fa fa-wpforms" aria-hidden="true"></i></h4>
+            <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
+            <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
+        </div>
+      </div>
+
+      <div class="c-dashboardInfo col-lg-3 col-md-6 ">
+        <div class="wrap el6">
+            <h4 class="card-title c-dashboardInfo__title">الدورات<i class="fa fa-wpforms" aria-hidden="true"></i></h4>
+            <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
+            <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
+        </div>
+      </div>
+
+      <div class="c-dashboardInfo col-lg-3 col-md-6 ">
+        <div class="wrap el7">
+           <h4 class="card-title c-dashboardInfo__title">العمل الإضافي<i class="fa fa-wpforms" aria-hidden="true"></i></h4>
+            <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
+            <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                    <!--            End of cards             -->
+
+
+
+
+
+
+                </div>
+                <div class="data_selected_option">
+                    <h3 style="width: 100%; background-color: #d2d2d2; padding: 0.5rem;">جميع الطلبات</h3>
+                    <div class="data-table">
+                        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+                        <table id="leaves" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: right;"></th>
+                                    <th style="text-align: right;">الحالة</th>
+                                    <th style="text-align: right;">إسم الموظف</th>
+                                    <th style="text-align: right;">نوعية الطلب</th>
+                                    <th style="text-align: center;"><input type="checkbox" class="select-all"/></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="leaves" t-as="leave">
+                                    <tr>
+                                        <td>actions...</td>
+                                        <td><t t-esc="leave.state" /></td>
+                                        <td><t t-esc="leave.employee_id.name" /></td>
+                                        <td><t t-esc="leave.holiday_status_id.name" /></td>
+                                        <td></td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
