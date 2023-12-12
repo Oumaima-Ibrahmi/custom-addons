@@ -465,7 +465,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row d-flex" style="flex-direction: row-reverse;">
+                    <div class="row d-flex" style="flex-direction: row-reverse; margin-top: 1rem;">
                         <div class="c-dashboardInfo col-3">
                             <div class="wrap">
                                 <h4 class="card-title c-dashboardInfo__title">الاجازات <i
