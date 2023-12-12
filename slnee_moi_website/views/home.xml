@@ -264,7 +264,7 @@
 
     <template id="my_dashboard" name="SLNEE - My Dashboard">
         <t t-call="website.layout">
-
+            <input type="text" class="my-token d-none" t-att-value="request.csrf_token()"/>
             <div class="background_image"/>
             <div class="my-dashboard-menu-bar">
                 <div class="inline-logo my-dashboard">
@@ -425,96 +425,91 @@
                     </a>
                 </div>
             </div>
-<!-- DASHBOARD -->
+
             <div class="data_container d-block">
-                <div class="row d-flex dashboard-options">
-
-
-                           <!--            Beggining  of cards             -->
-
-                    <div id="root rt"  dir="rtl">
-             <div class="container pt-5">
-                     <div class="row align-items-stretch len">
-                         <div class="c-dashboardInfo col-lg-3 col-md-6 ">
-                             <div class="wrap el1 ">
-                              <div class="admin-img"> <img src="/slnee_moi_website/static/src/img/admin.png" width="160" height="120" alt="admin-img"/></div>
-                                 <h4 class="admin-title">Administrator</h4>
-                                   <div class="admin-info">
-                                     <span>10000</span>
-                                     <span>المستشارين</span>
-                                     <span>الهيئة العامة للنقل</span>
-                                   </div>
-                              </div>
-                          </div>
-                            <div class="c-dashboardInfo col-lg-3 col-md-6 ">
-                              <div class="wrap el2">
-                                  <h4 class="card-title c-dashboardInfo__title">الحضور اليومي:
-                                    <i class="fa fa-wpforms" aria-hidden="true"></i>
-                                  </h4>
-                                    <span class="txt-el2"> لم يتم تسجيل الحضور</span>
-
-                                    <span class="hind-font caption-12 c-dashboardInfo__subInfo"></span>
-                              </div>
+                <div class="row d-block dashboard-options">
+                    <div class="row d-flex" style="flex-direction: row-reverse;">
+                        <div class="c-dashboardInfo col-3">
+                            <div class="wrap">
+                                <div class="profile-img">
+                                    <img src="/slnee_moi_website/static/src/img/avatar.png" alt="profile avatar"/>
+                                </div>
+                                <h4 class="admin-title">Administrator</h4>
+                                <div class="admin-info">
+                                    <span>10000</span>
+                                    <span>المستشارين</span>
+                                    <span>الهيئة العامة للنقل</span>
+                                </div>
                             </div>
+                        </div>
+                        <div class="c-dashboardInfo col-3">
+                            <div class="wrap">
+                                <h4 class="card-title c-dashboardInfo__title">الحضور اليومي: <i
+                                        class="fa fa-wpforms" aria-hidden="true"></i>
+                                </h4>
+                                <span class="txt-el2"> لم يتم تسجيل الحضور</span>
+
+                                <span class="hind-font caption-12 c-dashboardInfo__subInfo"></span>
+                            </div>
+                        </div>
 
 
-                           <div class="c-dashboardInfo col-lg-6 col-md-6 ">
-                             <div class="wrap el3">
-                                  <h4 class="card-title c-dashboardInfo__title">الحضور الاسبوعي:
-                                     <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                  </h4>
-                                     <span class="txt-bg">ساعات العمل الحالية</span>
-                                     <span class="hind-font caption-12 c-dashboardInfo__subInfo"> *ساعات العمل المطلوبة=40</span>
-                              </div>
-                           </div>
-                           </div>
-                           </div>
+                        <div class="c-dashboardInfo col-6">
+                            <div class="wrap">
+                                <h4 class="card-title c-dashboardInfo__title">الحضور
+                                    الاسبوعي: <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                </h4>
+                                <span class="txt-bg">ساعات العمل الحالية</span>
+                                <span class="hind-font caption-12 c-dashboardInfo__subInfo">
+                                    *ساعات العمل المطلوبة=40</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex" style="flex-direction: row-reverse;">
+                        <div class="c-dashboardInfo col-3">
+                            <div class="wrap">
+                                <h4 class="card-title c-dashboardInfo__title">الاجازات <i
+                                        class="fa fa-wpforms" aria-hidden="true"></i>
+                                </h4>
+                                <span class="hind-font caption-12 c-dashboardInfo__count">
+                                    €500</span>
+                                <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last
+                                    month: €30</span>
+                            </div>
+                        </div>
+                        <div class="c-dashboardInfo col-3">
+                            <div class="wrap">
+                                <h4 class="card-title c-dashboardInfo__title">الإنتدابات<i
+                                        class="fa fa-wpforms" aria-hidden="true"></i></h4>
+                                <span class="hind-font caption-12 c-dashboardInfo__count">
+                                    €500</span>
+                                <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last
+                                    month: €30</span>
+                            </div>
+                        </div>
 
-                        <div class="container pt-5 second-container">
-                           <div class="row align-items-stretch">
-                           <div class="c-dashboardInfo col-lg-3 col-md-6 ">
-                            <div class="wrap el4">
-                                <h4 class="card-title c-dashboardInfo__title">الاجازات
-                                    <i class="fa fa-wpforms" aria-hidden="true"></i> </h4>
-                                     <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
-                                     <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
-                              </div>
-                             </div>
-                               <div class="c-dashboardInfo col-lg-3 col-md-6 ">
-                            <div class="wrap el5">
-            <h4 class="card-title c-dashboardInfo__title">الإنتدابات<i class="fa fa-wpforms" aria-hidden="true"></i></h4>
-            <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
-            <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
-        </div>
-      </div>
+                        <div class="c-dashboardInfo col-3">
+                            <div class="wrap">
+                                <h4 class="card-title c-dashboardInfo__title">الدورات<i
+                                        class="fa fa-wpforms" aria-hidden="true"></i></h4>
+                                <span class="hind-font caption-12 c-dashboardInfo__count">
+                                    €500</span>
+                                <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last
+                                    month: €30</span>
+                            </div>
+                        </div>
 
-      <div class="c-dashboardInfo col-lg-3 col-md-6 ">
-        <div class="wrap el6">
-            <h4 class="card-title c-dashboardInfo__title">الدورات<i class="fa fa-wpforms" aria-hidden="true"></i></h4>
-            <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
-            <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
-        </div>
-      </div>
-
-      <div class="c-dashboardInfo col-lg-3 col-md-6 ">
-        <div class="wrap el7">
-           <h4 class="card-title c-dashboardInfo__title">العمل الإضافي<i class="fa fa-wpforms" aria-hidden="true"></i></h4>
-            <span class="hind-font caption-12 c-dashboardInfo__count">€500</span>
-            <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last month: €30</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-                    <!--            End of cards             -->
-
-
-
-
-
-
+                        <div class="c-dashboardInfo col-3">
+                            <div class="wrap">
+                                <h4 class="card-title c-dashboardInfo__title">العمل الإضافي<i
+                                        class="fa fa-wpforms" aria-hidden="true"></i></h4>
+                                <span class="hind-font caption-12 c-dashboardInfo__count">
+                                    €500</span>
+                                <span class="hind-font caption-12 c-dashboardInfo__subInfo">Last
+                                    month: €30</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="data_selected_option">
                     <h3 style="width: 100%; background-color: #d2d2d2; padding: 0.5rem;">جميع الطلبات</h3>
