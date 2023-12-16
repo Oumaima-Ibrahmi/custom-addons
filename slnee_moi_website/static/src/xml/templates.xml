@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="slnee_templates" xml:space="preserve">
+    <t t-name="slnee_moi_dashboard_options">
+        <div class="row d-flex" style="flex-direction: row-reverse;">
+            <div class="c-dashboardInfo col-3">
+                <div class="wrap">
+                    <div class="profile-img">
+                        <img t-attf-src="data:image/jpg;base64,{{user.image_1920}}" alt="profile avatar"/>
+                    </div>
+                    <h4 class="admin-title" t-esc="user.name"/>
+                    <div class="admin-info">
+                        <span t-if="user.pin" t-esc="user.pin"/>
+                        <span t-esc="user.job_title"/>
+                        <span t-esc="user.department_id[1]"/>
+                    </div>
+                </div>
+            </div>
+            <div class="c-dashboardInfo col-3">
+                <div class="wrap">
+                    <h4 class="card-title c-dashboardInfo__title">
+                        <i class="fa fa-wpforms" aria-hidden="true"></i>الحضور اليومي
+                    </h4>
+                    <span class="hind-font caption-12 c-dashboardInfo__count text-right">لم يتم تسجيل الحضور</span>
+                    <span class="hind-font caption-12 c-dashboardInfo__subInfo text-right"></span>
+                </div>
+            </div>
+
+
+            <div class="c-dashboardInfo col-6">
+                <div class="wrap">
+                    <h4 class="card-title c-dashboardInfo__title">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>الحضور الاسبوعي
+                    </h4>
+                    <span class="hind-font caption-12 c-dashboardInfo__count text-right">لم يتم تسجيل الحضورساعات العمل الحالية</span>
+                    <span class="hind-font caption-12 c-dashboardInfo__subInfo text-right">
+                        *ساعات العمل المطلوبة=40</span>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex" style="flex-direction: row-reverse; margin-top: 1rem;">
+            <div class="c-dashboardInfo col-3 cursor-pointer js_buttons" data-api="/get-leaves" data-id="leaves">
+                <div class="wrap">
+                    <h4 class="card-title c-dashboardInfo__title">
+                        <i class="fa fa-wpforms" aria-hidden="true"></i><span>الاجازات</span>
+                    </h4>
+                    <span class="hind-font caption-12 c-dashboardInfo__count text-right"></span>
+                    <span class="hind-font caption-12 c-dashboardInfo__subInfo text-right"></span>
+                </div>
+            </div>
+            <div class="c-dashboardInfo col-3 cursor-pointer js_buttons" data-api="/get-leaves" data-id="leaves">
+                <div class="wrap">
+                    <h4 class="card-title c-dashboardInfo__title">
+                        <i class="fa fa-wpforms" aria-hidden="true"></i><span>الإنتدابات</span>
+                    </h4>
+                    <span class="hind-font caption-12 c-dashboardInfo__count text-right"></span>
+                    <span class="hind-font caption-12 c-dashboardInfo__subInfo text-right"></span>
+                </div>
+            </div>
+            <div class="c-dashboardInfo col-3 cursor-pointer js_buttons" data-api="/get-leaves" data-id="leaves">
+                <div class="wrap">
+                    <h4 class="card-title c-dashboardInfo__title">
+                        <i class="fa fa-wpforms" aria-hidden="true"></i><span>الدورات</span>
+                    </h4>
+                    <span class="hind-font caption-12 c-dashboardInfo__count text-right"></span>
+                    <span class="hind-font caption-12 c-dashboardInfo__subInfo text-right"></span>
+                </div>
+            </div>
+            <div class="c-dashboardInfo col-3 cursor-pointer js_buttons" data-api="/get-leaves" data-id="leaves">
+                <div class="wrap">
+                    <h4 class="card-title c-dashboardInfo__title">
+                        <i class="fa fa-wpforms" aria-hidden="true"></i><span>العمل الإضافي</span>
+                    </h4>
+                    <span class="hind-font caption-12 c-dashboardInfo__count text-right"></span>
+                    <span class="hind-font caption-12 c-dashboardInfo__subInfo text-right"></span>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="slnee_moi_dashboard_datatable">
+        <h3 style="width: 100%; padding: 0.5rem;" t-esc="title"/>
+        <div class="data-table">
+            <table t-attf-id="{{id}}" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th style="text-align: right;"></th>
+                        <t t-foreach="datatable_head" t-as="head">
+                            <th style="text-align: right;" t-esc="head"/>
+                        </t>
+                        <th style="text-align: center;"><input type="checkbox" class="select-all"/></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="leaves" t-as="leave">
+                        <tr>
+                            <td class="actions" style="text-align: right;">
+                                <span class="icon-cancel"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                <span class="icon-confirm"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                <span class="icon-edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                <span class="icon-view" data-toggle="modal" data-target="#modal_view" t-attf-data-api="/get-leave/{{leave.id}}">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </td>
+                            <td style="text-align: right;"><t t-esc="leave.state" /></td>
+                            <td style="text-align: right;"><t t-esc="leave.employee_id[1]" /></td>
+                            <td style="text-align: right;"><t t-esc="leave.holiday_status_id[1]" /></td>
+                            <td style="text-align: right;"><t t-esc="leave.id" /></td>
+                            <td style="text-align: right;"><t t-esc="leave.create_date.split(' ')[0]" /></td>
+                            <td></td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </div>
+    </t>
+    <t t-name="slnee_moi_view_leave">
+        <div class="modal-header">
+            <h5 class="modal-title"><t t-esc="title"/></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"/></span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <table>
+                <tr>
+                    <td><t t-esc="data.employee_id[1]"/> </td>
+                    <td>الموظف:</td>
+                </tr>
+                <tr>
+                    <td><t t-esc="data.employee_id[1]"/> </td>
+                    <td>من:</td>
+                </tr>
+                <tr>
+                    <td><t t-esc="data.employee_id[1]"/> </td>
+                    <td>إلى:</td>
+                </tr>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </t>
+</templates>

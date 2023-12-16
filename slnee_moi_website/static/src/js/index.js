@@ -1,5 +1,10 @@
 odoo.define('slnee_moi_website.home_page', function(require){
     'use strict';
+
+    function viewModal(event) {
+    	console.log('this:', event);
+    }
+
     $( document ).ready(function() {
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3.5,
@@ -47,7 +52,7 @@ odoo.define('slnee_moi_website.home_page', function(require){
 			});
 		}
 
-		if ($('#leaves')){
+		if ($('#leaves').length > 0){
 			var leaves = new DataTable('#leaves', {
 				columnDefs: [
 					{
@@ -64,8 +69,8 @@ odoo.define('slnee_moi_website.home_page', function(require){
 				},
 				order: [[1, 'asc']]
 			});
-			
-            $('.select-all').change(function() {
+
+			$('.select-all').change(function() {
 				if ($(this)[0].checked) {
 					$(this).closest('table').find('tbody tr').removeClass('selected');
 					$(this).closest('table').find('tbody tr').addClass('selected');
@@ -73,8 +78,6 @@ odoo.define('slnee_moi_website.home_page', function(require){
 					$(this).closest('table').find('tbody tr').removeClass('selected');
 				}
 			});
-//			add here
-
 		}
     });
 });
