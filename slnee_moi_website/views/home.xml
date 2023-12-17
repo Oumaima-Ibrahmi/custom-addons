@@ -510,7 +510,24 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <span>Test</span>
+
+
+
+
+<!--                                        <table>-->
+<!--                <tr>-->
+<!--                    <td><t t-esc="data.employee_id[1]"/> </td>-->
+<!--                    <td>الموظف:</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td><t t-esc="data.employee_id[1]"/> </td>-->
+<!--                    <td>من:</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td><t t-esc="data.employee_id[1]"/> </td>-->
+<!--                    <td>إلى:</td>-->
+<!--                </tr>-->
+<!--            </table>-->
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
