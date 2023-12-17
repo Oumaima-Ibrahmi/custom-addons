@@ -502,7 +502,7 @@
             </div>
             <div class="modal fade" id="modal_view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                    <div class="modal-content" dir="rtl">
+                    <div class="modal-content" dir="rtl" style="hate-feet-content">
                         <div class="modal-header">
                             <h5 class="modal-title"></h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
