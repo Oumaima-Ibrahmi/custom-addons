@@ -500,9 +500,9 @@
                 <div class="data_selected_option">
                 </div>
             </div>
-            <div class="modal fade" id="modal_view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modal_view" tabindex="-1" aria-labelledby="ModalView" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                    <div class="modal-content" dir="rtl" style="hate-feet-content">
+                    <div class="modal-content" dir="rtl">
                         <div class="modal-header">
                             <h5 class="modal-title"></h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -510,24 +510,23 @@
                             </button>
                         </div>
                         <div class="modal-body">
-
-
-
-
-<!--                                        <table>-->
-<!--                <tr>-->
-<!--                    <td><t t-esc="data.employee_id[1]"/> </td>-->
-<!--                    <td>الموظف:</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><t t-esc="data.employee_id[1]"/> </td>-->
-<!--                    <td>من:</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><t t-esc="data.employee_id[1]"/> </td>-->
-<!--                    <td>إلى:</td>-->
-<!--                </tr>-->
-<!--            </table>-->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal_edit" tabindex="-1" aria-labelledby="ModalEdit" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content" dir="rtl">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"/></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

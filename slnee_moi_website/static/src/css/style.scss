@@ -607,11 +607,6 @@ td.actions span.icon-view:hover {
 	color: #1d9ccd;
 }
 
-.modal .modal-header,
-.modal .modal-footer {
-	flex-direction: row-reverse;
-}
-
 .modal button.close {
 	margin: -1rem auto -1rem -1rem;
 }
@@ -637,18 +632,27 @@ td.actions span.icon-view:hover {
     color:#0c5460;
     font-size:1.10em;
     border-color:#0c5460;
+}
 
-
-
-
+.row.row-details {
+    margin-top: 1rem;
 }
 
 .bg-color{
     background-color:#0c5460;
 }
+
+.form-label::before {
+	content: '•  ';
+	color:black;
+    font-size:15px;
+    font-weight: bold;
+}
+
 .form-label{
     color:black;
     font-size:15px;
+    font-weight: bold;
 }
 
 
@@ -671,4 +675,8 @@ td.actions span.icon-view:hover {
 
 .period-mr{
 margin-top:20px;
+}
+
+.modal-content {
+	height: fit-content;
 }

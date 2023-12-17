@@ -75,11 +75,13 @@ odoo.define('slnee_moi_website.dashboard', function(require){
 				$container.find('.icon-view').each(function(index, elem){
 					$(elem).click((ev) => self._viewModal(ev, self));
 				});
+				$container.find('.icon-edit').each(function(index, elem){
+					$(elem).click((ev) => self._editModal(ev, self));
+				});
 			});
         },
         _viewModal: function(ev, self) {
         	var api = $(ev.currentTarget).data().api;
-        	var title = $(ev.currentTarget).closest('h3').text();
 
         	self._rpc({
 				route: api,
@@ -87,7 +89,21 @@ odoo.define('slnee_moi_website.dashboard', function(require){
 				console.log("data:", data);
 				var $modal = $('#modal_view .modal-content');
 				var $modal_content = $(QWeb.render('slnee_moi_view_leave', {
-					title: title,
+					data: data[0],
+				}));
+				$modal.empty();
+				$modal.append($modal_content);
+			});
+        },
+        _editModal: function(ev, self) {
+        	var api = $(ev.currentTarget).data().api;
+
+        	self._rpc({
+				route: api,
+			}).then(function (data) {
+				console.log("data:", data);
+				var $modal = $('#modal_edit .modal-content');
+				var $modal_content = $(QWeb.render('slnee_moi_edit_leave', {
 					data: data[0],
 				}));
 				$modal.empty();
