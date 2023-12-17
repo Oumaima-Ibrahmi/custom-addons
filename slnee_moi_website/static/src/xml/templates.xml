@@ -178,7 +178,8 @@
                                  <div class="form-row">
                                      <div class="form-group col-md-9 text-right" >
                                          <div class="form-title">تعليق الإداري</div>
-                                         <div class="form-label"><t t-esc="data.notes" /></div>
+                                         <div class="form-label" t-if="data.notes"><t t-esc="data.notes" /></div>
+                                         <div class="form-label" t-if="!data.notes">لا تعليق</div>
                                      </div>
                                  </div>
                          </div>
